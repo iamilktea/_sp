@@ -4,7 +4,7 @@ Aura 是一個專為學習「編譯器原理」與「系統程式」而設計的
 
 本系統會將 Aura 原始碼轉換為 Token 序列，建構出抽象語法樹 (AST)，並由直譯器直接走訪執行，無需編譯為目的碼或依賴虛擬機。
 
-## ✨ 核心特色 (Features)
+##  核心特色 (Features)
 
 * **完整的直譯管線**：包含詞法分析 (Lexer)、語法分析 (Parser) 與直譯器 (Interpreter)。
 * **AST 樹狀走訪**：透過遞迴走訪抽象語法樹來執行指令與進行數學運算。
@@ -12,7 +12,7 @@ Aura 是一個專為學習「編譯器原理」與「系統程式」而設計的
 * **環境變數管理**：具備符號表 (Symbol Table) 機制，支援變數宣告 (`let`) 與重新賦值。
 * **輕量化設計**：純 Python 實作，零第三方套件依賴 (Zero dependencies)。
 
-## 📂 專案架構 (Project Structure)
+##  專案架構 (Project Structure)
 
 \`\`\`text
 _cm/
@@ -26,7 +26,7 @@ _cm/
 └── README.md
 \`\`\`
 
-## 🚀 快速開始 (Quick Start)
+##  快速開始 (Quick Start)
 
 ### 環境要求
 * Python 3.8 或以上版本
@@ -39,7 +39,7 @@ _cm/
 python src/main.py examples/test.au
 \`\`\`
 
-## 📝 語法範例 (Syntax Example)
+##  語法範例 (Syntax Example)
 
 以下是一個計算階乘的 Aura 程式範例：
 
