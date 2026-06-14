@@ -1,13 +1,12 @@
+# src/main.py
 import sys
 import os
 
 from lexer import tokenize
 from parser import Parser
-from compiler import Compiler
-from vm import VM
+from interpreter import Interpreter
 
 def main():
-    # 檢查是否有傳入檔案參數
     if len(sys.argv) < 2:
         print("用法: python src/main.py <filename.au>")
         sys.exit(1)
@@ -22,21 +21,17 @@ def main():
         source_code = f.read()
 
     try:
-        # 1. 詞法分析
+        # 1. 詞法分析 (Lexer)
         tokens = tokenize(source_code)
         
         # 2. 語法分析 (建構 AST)
         parser = Parser(tokens)
         ast = parser.parse()
         
-        # 3. 程式碼生成 (建構 Bytecode)
-        compiler = Compiler()
-        bytecode = compiler.compile(ast)
-        
-        # 4. 虛擬機執行
-        print(f"--- 執行 {filepath} ---")
-        vm = VM()
-        vm.run(bytecode)
+        # 3. 直譯器直接執行 AST
+        print(f"--- 執行 {filepath} (Interpreter 模式) ---")
+        interpreter = Interpreter()
+        interpreter.interpret(ast)
         print("--- 執行結束 ---")
 
     except Exception as e:
