@@ -1,5 +1,13 @@
+let n = 5;
+let result = 1;
 
-let a = 10;
-let b = 20;
-let c = (a + b) * 2;
-print(c); // 預期輸出: 60
+while (n > 0) {
+    result = result * n;
+    n = n - 1;
+}
+
+if (result == 120) {
+    print(1); // 成功
+} else {
+    print(0); // 失敗
+}
