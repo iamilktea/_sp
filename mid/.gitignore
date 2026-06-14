@@ -1,1 +1,17 @@
 
+# Object files
+*.o
+*.obj
+
+# Executables
+aura
+aura.exe
+run_lexer_test
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE configurations
+.vscode/
+.idea/
