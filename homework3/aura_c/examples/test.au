@@ -1,0 +1,14 @@
+let n = 5;
+let result = 1;
+
+// 計算階乘
+while (n > 0) {
+    result = result * n;
+    n = n - 1;
+}
+
+if (result == 120) {
+    print(result);
+} else {
+    print(0);
+}
