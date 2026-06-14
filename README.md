@@ -9,9 +9,6 @@
 學校科系 | [金門大學資訊工程系](https://www.nqu.edu.tw/educsie/index.php)
 課程教材 | https://github.com/ccc114b/cpu2os
 
-好的，為你簡單排版如下。
-
----
 
 # 系統程式設計 (System Programming) 期末學習歷程總整
 
