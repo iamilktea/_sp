@@ -9,6 +9,25 @@
 學校科系 | [金門大學資訊工程系](https://www.nqu.edu.tw/educsie/index.php)
 課程教材 | https://github.com/ccc114b/cpu2os
 
+
+🤖 AI 輔助開發聲明 (AI Assistance Declaration)
+本專案及過往各次平時作業的開發過程中，有使用 AI 輔助開發與學習。
+
+使用工具：Google Gemini (網頁版對話)、Antigravity 
+
+使用方式：
+
+協助理解底層系統概念（如 Call Stack、Mutex、Race Condition）。
+
+提供 C 語言語法除錯（Debug）與架構重構（Refactoring）建議。
+
+輔助生成基礎程式碼骨架（如 Lexer, Parser 等），並由本人進行後續的邏輯修改與驗證。
+
+AI 對話紀錄：
+
+[Gemini](https://gemini.google.com/share/3c189915f769)
+
+
 ## 📚 平時作業匯總與學習說明
 
 本學期的學習主軸涵蓋了「編譯器前端與後端原理」、「作業系統並行控制」以及「Linux 底層系統呼叫」。以下為歷次作業的實作總整與概念說明：
